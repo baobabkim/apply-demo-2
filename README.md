@@ -1,25 +1,25 @@
-# Data Analysis Project: Retention & A/B Testing
+# 데이터 분석 프로젝트: 리텐션 & A/B 테스팅
 
-A comprehensive data analysis project demonstrating retention analysis, A/B testing, and user segmentation using Python and Streamlit.
+Python과 Streamlit을 사용한 리텐션 분석, A/B 테스팅, 사용자 세그먼테이션을 포함한 종합 데이터 분석 프로젝트입니다.
 
-## 📋 Project Overview
+## 📋 프로젝트 개요
 
-This project implements a complete data analysis pipeline for a mobile app scenario, including:
-- **Synthetic data generation** for 10,000+ users with realistic behavior patterns
-- **Retention analysis** with cohort-based metrics (D1, D3, D7, D14, D30)
-- **A/B testing** with statistical significance testing
-- **User segmentation** using K-means clustering
-- **Interactive dashboard** built with Streamlit
+모바일 앱 시나리오를 위한 완전한 데이터 분석 파이프라인을 구현한 프로젝트입니다:
+- **가상 데이터 생성** - 현실적인 행동 패턴을 가진 10,000명 이상의 사용자
+- **리텐션 분석** - 코호트 기반 지표 (D1, D3, D7, D14, D30)
+- **A/B 테스팅** - 통계적 유의성 검정
+- **사용자 세그먼테이션** - K-means 클러스터링 사용
+- **인터랙티브 대시보드** - Streamlit으로 구축
 
-## 🛠️ Tech Stack
+## 🛠️ 기술 스택
 
-- **Python 3.8+** - Core programming language
-- **SQLite** - Lightweight database for data storage
-- **Pandas & NumPy** - Data manipulation and analysis
-- **SciPy & Statsmodels** - Statistical testing
-- **Scikit-learn** - Machine learning and clustering
-- **Streamlit** - Interactive dashboard framework
-- **Matplotlib, Seaborn, Plotly** - Data visualization
+- **Python 3.8+** - 핵심 프로그래밍 언어
+- **SQLite** - 데이터 저장을 위한 경량 데이터베이스
+- **Pandas & NumPy** - 데이터 조작 및 분석
+- **SciPy & Statsmodels** - 통계 검정
+- **Scikit-learn** - 머신러닝 및 클러스터링
+- **Streamlit** - 인터랙티브 대시보드 프레임워크
+- **Matplotlib, Seaborn, Plotly** - 데이터 시각화
 
 ## 📁 Project Structure
 
@@ -49,15 +49,15 @@ apply-demo-2/
 └── README.md                     # This file
 ```
 
-## 🚀 Quick Start
+## 🚀 빠른 시작
 
-### 1. Clone the repository
+### 1. 리포지토리 클론
 ```bash
 git clone https://github.com/baobabkim/apply-demo-2.git
 cd apply-demo-2
 ```
 
-### 2. Create a virtual environment
+### 2. 가상환경 생성
 ```bash
 python -m venv venv
 
@@ -68,22 +68,22 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-### 3. Install dependencies
+### 3. 의존성 설치
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Generate data
+### 4. 데이터 생성
 ```bash
 python src/data_generation/run_all.py
 ```
 
-This will create:
-- SQLite database with 10,000 users
-- 700,000+ behavior event logs
-- A/B test assignments and conversions
+다음이 생성됩니다:
+- 10,000명의 사용자가 포함된 SQLite 데이터베이스
+- 700,000개 이상의 행동 이벤트 로그
+- A/B 테스트 할당 및 전환 데이터
 
-**Expected output:**
+**예상 출력:**
 ```
 [1/4] Creating database schema...
 [2/4] Generating user data...
@@ -92,17 +92,17 @@ This will create:
 Total time: ~30 seconds
 ```
 
-### 5. Run analysis
+### 5. 분석 실행
 ```bash
 python src/analysis/run_all_analysis.py
 ```
 
-This will generate:
-- Retention analysis (D1-D30 metrics)
-- A/B test statistical testing
-- User segmentation (K-means clustering)
+다음이 생성됩니다:
+- 리텐션 분석 (D1-D30 지표)
+- A/B 테스트 통계 검정
+- 사용자 세그먼테이션 (K-means 클러스터링)
 
-**Expected output:**
+**예상 출력:**
 ```
 [1/3] Running retention analysis...
 [2/3] Running A/B test analysis...
@@ -110,127 +110,127 @@ This will generate:
 Total time: ~20 seconds
 ```
 
-### 6. Launch dashboard
+### 6. 대시보드 실행
 ```bash
 streamlit run src/dashboard/app.py
 ```
 
-The dashboard will open in your browser at `http://localhost:8501`
+대시보드가 브라우저에서 `http://localhost:8501`로 열립니다
 
-## 📊 Key Features
+## 📊 주요 기능
 
-### Retention Analysis
-- **Cohort-based retention tracking** (D1, D3, D7, D14, D30)
-- **Reward impact analysis**: Comparison of users who earned rewards vs those who didn't
-- **Statistical significance testing**: Chi-square tests for retention differences
-- **Cohort analysis**: Weekly cohort retention patterns
+### 리텐션 분석
+- **코호트 기반 리텐션 추적** (D1, D3, D7, D14, D30)
+- **보상 영향 분석**: 보상을 획득한 사용자와 그렇지 않은 사용자 비교
+- **통계적 유의성 검정**: 리텐션 차이에 대한 카이제곱 검정
+- **코호트 분석**: 주간 코호트 리텐션 패턴
 
-**Key Finding:** Users earning rewards within 24 hours show 97%+ retention vs 70-75% for non-reward users (p < 0.0001)
+**주요 발견:** 24시간 내 보상을 획득한 사용자는 97%+ 리텐션을 보이며, 비보상 사용자(70-75%)보다 높음 (p < 0.0001)
 
-### A/B Testing
-- **Two-proportion z-test** for conversion rate comparison
-- **Chi-square test** for independence
-- **Effect size calculation** (Cohen's h)
-- **95% confidence intervals**
-- **Statistical power analysis**
+### A/B 테스팅
+- **Two-proportion z-test** - 전환율 비교
+- **카이제곱 검정** - 독립성 검정
+- **효과 크기 계산** (Cohen's h)
+- **95% 신뢰구간**
+- **통계적 검정력 분석**
 
-**Key Finding:** Treatment shows 6.69% relative lift but is not statistically significant (p = 0.1152, power = 35%)
+**주요 발견:** Treatment는 6.69% 상대적 상승을 보이지만 통계적으로 유의하지 않음 (p = 0.1152, power = 35%)
 
-### User Segmentation
-- **K-means clustering** with optimal cluster determination
-- **Elbow Method** and **Silhouette Score** for cluster validation
-- **Segment-specific retention** and conversion metrics
-- **Heterogeneous Treatment Effect (HTE)** analysis
+### 사용자 세그먼테이션
+- **K-means 클러스터링** - 최적 클러스터 수 결정
+- **Elbow Method** 및 **Silhouette Score** - 클러스터 검증
+- **세그먼트별 리텐션** 및 전환 지표
+- **이질적 처치 효과(HTE)** 분석
 
-**Key Finding:** Three distinct segments identified:
-- Low-engagement (51%): 30 avg events, 84% D7 retention
-- Medium-engagement (37%): 95 avg events, 99.9% D7 retention
-- High-engagement (12%): 205 avg events, 100% D7 retention
+**주요 발견:** 3개의 명확한 세그먼트 식별:
+- 저참여 (51%): 평균 30개 이벤트, 84% D7 리텐션
+- 중참여 (37%): 평균 95개 이벤트, 99.9% D7 리텐션
+- 고참여 (12%): 평균 205개 이벤트, 100% D7 리텐션
 
-## 📈 Dashboard Pages
+## 📈 대시보드 페이지
 
-1. **Overview**: KPIs and project summary
-2. **Retention Analysis**: Retention curves and cohort analysis
-3. **A/B Test Results**: Statistical test results and recommendations
-4. **User Segmentation**: Cluster characteristics and HTE analysis
-5. **Insights & Actions**: Key findings and recommended actions
+1. **Overview**: KPI 및 프로젝트 요약
+2. **Retention Analysis**: 리텐션 커브 및 코호트 분석
+3. **A/B Test Results**: 통계 검정 결과 및 권장사항
+4. **User Segmentation**: 클러스터 특성 및 HTE 분석
+5. **Insights & Actions**: 주요 발견사항 및 권장 액션
 
-## 🧪 Testing
+## 🧪 테스팅
 
-Run tests (when implemented):
+테스트 실행 (구현 시):
 ```bash
 pytest tests/
 ```
 
-## 📝 Documentation
+## 📝 문서
 
-- **PRD.md**: Product Requirements Document
-- **TASK.md**: Implementation task list
-- **Idelation.md**: Initial ideation and planning
+- **PRD.md**: 제품 요구사항 문서
+- **TASK.md**: 구현 작업 목록
+- **Idelation.md**: 초기 아이디어 및 계획
 
-## 🎯 Success Metrics
+## 🎯 성공 지표
 
-### Primary Metrics
-- ✅ D7 Retention: 92.91%
-- ✅ Reward impact: 27% higher retention for reward users
-- ⚠️ A/B test: Not statistically significant (needs longer test)
+### 주요 지표
+- ✅ D7 리텐션: 92.91%
+- ✅ 보상 영향: 보상 사용자의 리텐션이 27% 더 높음
+- ⚠️ A/B 테스트: 통계적으로 유의하지 않음 (더 긴 테스트 필요)
 
-### Technical Metrics
-- ✅ Data generation: ~30 seconds for 10K users
-- ✅ Analysis pipeline: ~20 seconds
-- ✅ Dashboard load time: <2 seconds
+### 기술 지표
+- ✅ 데이터 생성: 10K 사용자 기준 ~30초
+- ✅ 분석 파이프라인: ~20초
+- ✅ 대시보드 로딩 시간: <2초
 
-### Product Metrics
-- ✅ Interactive visualizations with Plotly
-- ✅ Clear insights and actionable recommendations
-- ✅ Comprehensive statistical analysis
+### 제품 지표
+- ✅ Plotly를 사용한 인터랙티브 시각화
+- ✅ 명확한 인사이트 및 실행 가능한 권장사항
+- ✅ 포괄적인 통계 분석
 
-## 🔧 Development
+## 🔧 개발
 
-### Adding new analysis modules
-1. Create new file in `src/analysis/`
-2. Implement analysis function
-3. Add to `run_all_analysis.py`
-4. Update dashboard to display results
+### 새로운 분석 모듈 추가
+1. `src/analysis/`에 새 파일 생성
+2. 분석 함수 구현
+3. `run_all_analysis.py`에 추가
+4. 대시보드 업데이트하여 결과 표시
 
-### Modifying data generation
-1. Edit relevant file in `src/data_generation/`
-2. Re-run `run_all.py` to regenerate data
-3. Re-run analysis pipeline
+### 데이터 생성 수정
+1. `src/data_generation/`의 관련 파일 편집
+2. `run_all.py` 재실행하여 데이터 재생성
+3. 분석 파이프라인 재실행
 
-## 📚 Key Insights
+## 📚 주요 인사이트
 
-1. **Reward Timing is Critical**: Getting users to earn rewards within 24 hours dramatically improves retention
-2. **Segment-Specific Strategies**: Low-engagement users respond best to treatment variant
-3. **Statistical Power Matters**: Current A/B test needs larger sample or longer duration
-4. **Cohort Patterns**: Retention is consistent across signup cohorts
+1. **보상 타이밍이 중요**: 24시간 내 보상 획득이 리텐션을 극적으로 향상
+2. **세그먼트별 전략**: 저참여 사용자가 treatment 변형에 가장 잘 반응
+3. **통계적 검정력 중요**: 현재 A/B 테스트는 더 큰 샘플 또는 더 긴 기간 필요
+4. **코호트 패턴**: 가입 코호트 전반에 걸쳐 일관된 리텐션
 
-## 🚀 Recommended Actions
+## 🚀 권장 액션
 
-1. **Optimize onboarding** to guide users to first reward within 24 hours
-2. **Implement personalized engagement** based on user segments
-3. **Continue A/B test** to reach statistical significance
-4. **Monitor high-engagement users** for any negative treatment effects
+1. **온보딩 최적화** - 24시간 내 첫 보상 획득 유도
+2. **개인화된 참여 구현** - 사용자 세그먼트 기반
+3. **A/B 테스트 지속** - 통계적 유의성 달성
+4. **고참여 사용자 모니터링** - 부정적 treatment 효과 확인
 
-## 📄 License
+## 📄 라이선스
 
-MIT License - See LICENSE file for details
+MIT License - 자세한 내용은 LICENSE 파일 참조
 
-## 👤 Author
+## 👤 작성자
 
 **baobabkim**
 - GitHub: [@baobabkim](https://github.com/baobabkim)
 
-## 🙏 Acknowledgments
+## 🙏 감사의 말
 
-This project demonstrates best practices in:
-- Product analytics and experimentation
-- Statistical hypothesis testing
-- Data visualization and storytelling
-- Reproducible data science workflows
+이 프로젝트는 다음 분야의 모범 사례를 보여줍니다:
+- 제품 분석 및 실험
+- 통계적 가설 검정
+- 데이터 시각화 및 스토리텔링
+- 재현 가능한 데이터 과학 워크플로우
 
 ---
 
-**Status**: ✅ Complete (All 7 phases implemented)
+**상태**: ✅ 완료 (전체 7개 Phase 구현)
 
-**Last Updated**: December 2024
+**최종 업데이트**: 2024년 12월
