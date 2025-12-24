@@ -1,0 +1,141 @@
+{
+  "n_clusters": 3,
+  "total_users": 10000,
+  "elbow_analysis": [
+    {
+      "k": 2,
+      "inertia": 39121.48283606366,
+      "silhouette_score": 0.45112089903634367
+    },
+    {
+      "k": 3,
+      "inertia": 30646.33563242134,
+      "silhouette_score": 0.3485230030195365
+    },
+    {
+      "k": 4,
+      "inertia": 23438.065902112194,
+      "silhouette_score": 0.35564639888420163
+    },
+    {
+      "k": 5,
+      "inertia": 17700.387806849314,
+      "silhouette_score": 0.3657204190311475
+    },
+    {
+      "k": 6,
+      "inertia": 14352.645453827305,
+      "silhouette_score": 0.3915669136901566
+    },
+    {
+      "k": 7,
+      "inertia": 11998.360172840956,
+      "silhouette_score": 0.40478190260900015
+    }
+  ],
+  "segment_statistics": [
+    {
+      "cluster_id": 0,
+      "size": 5101,
+      "percentage": 51.01,
+      "avg_total_events": 29.72,
+      "avg_active_days": 10.71,
+      "avg_reward_count": 3.3,
+      "avg_reward_value": 74.41,
+      "avg_activities": 11.6,
+      "avg_daily_events": 3.18
+    },
+    {
+      "cluster_id": 1,
+      "size": 1170,
+      "percentage": 11.7,
+      "avg_total_events": 205.74,
+      "avg_active_days": 29.22,
+      "avg_reward_count": 22.31,
+      "avg_reward_value": 512.48,
+      "avg_activities": 81.77,
+      "avg_daily_events": 7.42
+    },
+    {
+      "cluster_id": 2,
+      "size": 3729,
+      "percentage": 37.29,
+      "avg_total_events": 95.02,
+      "avg_active_days": 20.53,
+      "avg_reward_count": 10.28,
+      "avg_reward_value": 233.36,
+      "avg_activities": 37.72,
+      "avg_daily_events": 5.63
+    }
+  ],
+  "segment_retention": [
+    {
+      "cluster_id": 0,
+      "total_users": 3763,
+      "d7_retained": 3160,
+      "d7_retention_rate": 83.98
+    },
+    {
+      "cluster_id": 1,
+      "total_users": 1170,
+      "d7_retained": 1170,
+      "d7_retention_rate": 100.0
+    },
+    {
+      "cluster_id": 2,
+      "total_users": 3615,
+      "d7_retained": 3612,
+      "d7_retention_rate": 99.92
+    }
+  ],
+  "heterogeneous_treatment_effects": [
+    {
+      "cluster_id": 0,
+      "control_conversion_rate": 17.75,
+      "treatment_conversion_rate": 20.49,
+      "lift_pct": 15.41
+    },
+    {
+      "cluster_id": 1,
+      "control_conversion_rate": 18.18,
+      "treatment_conversion_rate": 17.53,
+      "lift_pct": -3.56
+    },
+    {
+      "cluster_id": 2,
+      "control_conversion_rate": 19.71,
+      "treatment_conversion_rate": 19.49,
+      "lift_pct": -1.12
+    }
+  ],
+  "feature_importance": {
+    "features_used": [
+      "total_events",
+      "active_days",
+      "reward_count",
+      "total_reward_value",
+      "activities_completed",
+      "avg_daily_events",
+      "activity_ratio"
+    ],
+    "scaler_mean": [
+      74.6632,
+      16.5363,
+      8.1243,
+      184.93587200000002,
+      29.55,
+      4.5898804285713,
+      1.015923702609876
+    ],
+    "scaler_std": [
+      62.60114029121195,
+      9.406916727068438,
+      6.903524426696845,
+      161.30315353414395,
+      25.39236696332187,
+      2.872446256595242,
+      0.28109718249651333
+    ]
+  },
+  "analysis_timestamp": "2025-12-24T14:13:46.767713"
+}

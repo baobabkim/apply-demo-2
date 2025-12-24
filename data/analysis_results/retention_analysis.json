@@ -1,0 +1,126 @@
+{
+  "overall_retention": {
+    "D1": {
+      "total_users": 9964,
+      "retained_users": 9334,
+      "retention_rate": 93.68
+    },
+    "D3": {
+      "total_users": 9684,
+      "retained_users": 9012,
+      "retention_rate": 93.06
+    },
+    "D7": {
+      "total_users": 8548,
+      "retained_users": 7942,
+      "retention_rate": 92.91
+    },
+    "D14": {
+      "total_users": 5821,
+      "retained_users": 5443,
+      "retention_rate": 93.51
+    },
+    "D30": {
+      "total_users": 1114,
+      "retained_users": 1041,
+      "retention_rate": 93.45
+    }
+  },
+  "reward_comparison": {
+    "D1": {
+      "no_reward": {
+        "total_users": 1789,
+        "retained_users": 1331,
+        "retention_rate": 74.4
+      },
+      "reward": {
+        "total_users": 8175,
+        "retained_users": 8003,
+        "retention_rate": 97.9
+      },
+      "statistical_test": {
+        "chi2": 1364.2223,
+        "p_value": 0.0,
+        "significant": true
+      }
+    },
+    "D3": {
+      "no_reward": {
+        "total_users": 1738,
+        "retained_users": 1239,
+        "retention_rate": 71.29
+      },
+      "reward": {
+        "total_users": 7946,
+        "retained_users": 7773,
+        "retention_rate": 97.82
+      },
+      "statistical_test": {
+        "chi2": 1550.6669,
+        "p_value": 0.0,
+        "significant": true
+      }
+    },
+    "D7": {
+      "no_reward": {
+        "total_users": 1539,
+        "retained_users": 1084,
+        "retention_rate": 70.44
+      },
+      "reward": {
+        "total_users": 7009,
+        "retained_users": 6858,
+        "retention_rate": 97.85
+      },
+      "statistical_test": {
+        "chi2": 1435.2486,
+        "p_value": 0.0,
+        "significant": true
+      }
+    },
+    "D14": {
+      "no_reward": {
+        "total_users": 1057,
+        "retained_users": 779,
+        "retention_rate": 73.7
+      },
+      "reward": {
+        "total_users": 4764,
+        "retained_users": 4664,
+        "retention_rate": 97.9
+      },
+      "statistical_test": {
+        "chi2": 830.485,
+        "p_value": 0.0,
+        "significant": true
+      }
+    },
+    "D30": {
+      "no_reward": {
+        "total_users": 207,
+        "retained_users": 156,
+        "retention_rate": 75.36
+      },
+      "reward": {
+        "total_users": 907,
+        "retained_users": 885,
+        "retention_rate": 97.57
+      },
+      "statistical_test": {
+        "chi2": 132.1871,
+        "p_value": 0.0,
+        "significant": true
+      }
+    }
+  },
+  "cohort_analysis": [
+    {
+      "cohort_week": "None",
+      "cohort_size": 10000,
+      "d1_retained": 9334,
+      "d7_retained": 7942,
+      "d30_retained": 1041
+    }
+  ],
+  "analysis_timestamp": "2025-12-24T14:13:36.806277"
+}

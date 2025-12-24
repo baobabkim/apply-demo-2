@@ -1,0 +1,39 @@
+{
+  "group_a": {
+    "total_users": 5000,
+    "conversions": 927,
+    "conversion_rate": 0.1854,
+    "conversion_rate_pct": 18.54
+  },
+  "group_b": {
+    "total_users": 5000,
+    "conversions": 989,
+    "conversion_rate": 0.1978,
+    "conversion_rate_pct": 19.78
+  },
+  "statistical_tests": {
+    "z_test": {
+      "z_score": 1.5754,
+      "p_value": 0.1152,
+      "significant": false
+    },
+    "chi_square_test": {
+      "chi_square": 2.4024,
+      "p_value": 0.1212,
+      "degrees_of_freedom": 1,
+      "significant": false
+    }
+  },
+  "effect_size": {
+    "cohens_h": 0.0315,
+    "relative_lift_pct": 6.69,
+    "absolute_lift_pct": 1.24
+  },
+  "confidence_interval_95": {
+    "lower": -0.3,
+    "upper": 2.78
+  },
+  "statistical_power": 0.3505,
+  "recommendation": "Keep control or run longer test",
+  "analysis_timestamp": "2025-12-24T14:13:36.812222"
+}
