@@ -13,11 +13,11 @@ Python과 Streamlit을 사용한 리텐션 분석, A/B 테스팅, 사용자 세�
 
 ## 🌐 라이브 대시보드
 
-**📊 [대시보드 바로가기](https://apply-demo-2.streamlit.app)** 
+**📊 [대시보드 바로가기](https://baobabkim.github.io/apply-demo-2/)** 
 
 실시간으로 데이터 분석 결과를 확인하세요! 로컬 설치 없이 웹 브라우저에서 바로 사용할 수 있습니다.
 
-> **참고**: 대시보드는 Streamlit Community Cloud에 배포되어 있습니다. 최초 접속 시 로딩에 약간의 시간이 걸릴 수 있습니다.
+> **참고**: 대시보드는 GitHub Pages에 배포되어 있으며, Plotly를 사용한 인터랙티브 차트를 제공합니다. GitHub Actions를 통해 자동으로 업데이트됩니다.
 
 ## 🛠️ 기술 스택
 
@@ -121,9 +121,9 @@ Total time: ~20 seconds
 ### 6. 대시보드 실행
 
 **온라인 대시보드:**
-- 🌐 **[라이브 대시보드 보기](https://apply-demo-2.streamlit.app)** - 설치 없이 바로 사용
+- 🌐 **[라이브 대시보드 보기](https://baobabkim.github.io/apply-demo-2/)** - 설치 없이 바로 사용
 
-**로컬 실행:**
+**로컬 실행 (Streamlit):**
 ```bash
 streamlit run src/dashboard/app.py
 ```
@@ -162,13 +162,22 @@ streamlit run src/dashboard/app.py
 
 ## 🚀 배포
 
-### Streamlit Cloud 배포
+### GitHub Pages 배포
 
-이 프로젝트는 Streamlit Community Cloud에 자동으로 배포됩니다:
+이 프로젝트는 GitHub Pages에 자동으로 배포됩니다:
 
-1. **라이브 URL**: https://apply-demo-2.streamlit.app
-2. **자동 배포**: GitHub main 브랜치에 푸시하면 자동으로 업데이트
-3. **무료 호스팅**: Streamlit Community Cloud 무료 티어 사용
+1. **라이브 URL**: https://baobabkim.github.io/apply-demo-2/
+2. **자동 배포**: GitHub Actions를 통해 main 브랜치 푸시 시 자동 업데이트
+3. **무료 호스팅**: GitHub Pages 사용
+
+**배포 설정:**
+- `.github/workflows/deploy-dashboard.yml` - GitHub Actions 워크플로우
+- `src/dashboard/generate_static.py` - 정적 HTML 생성기
+- `docs/index.html` - 배포되는 대시보드 파일
+
+### Streamlit Cloud (선택사항)
+
+Streamlit 인터랙티브 버전도 배포 가능:
 
 **배포 설정:**
 - `.streamlit/config.toml` - Streamlit 설정
