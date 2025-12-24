@@ -13,7 +13,7 @@ Python과 Streamlit을 사용한 리텐션 분석, A/B 테스팅, 사용자 세�
 
 ## 🌐 라이브 대시보드
 
-**📊 [대시보드 바로가기](https://apply-demo-2.streamlit.app/)** 
+**📊 [대시보드 바로가기](https://apply-demo-2-mhzlfh5uxhhkqchlhfozca.streamlit.app/)** 
 
 실시간으로 데이터 분석 결과를 확인하세요! 로컬 설치 없이 웹 브라우저에서 바로 사용할 수 있습니다.
 
@@ -121,7 +121,7 @@ Total time: ~20 seconds
 ### 6. 대시보드 실행
 
 **온라인 대시보드 (권장):**
-- 🌐 **[Streamlit 대시보드 보기](https://apply-demo-2.streamlit.app/)** - 설치 없이 바로 사용
+- 🌐 **[Streamlit 대시보드 보기](https://apply-demo-2-mhzlfh5uxhhkqchlhfozca.streamlit.app/)** - 설치 없이 바로 사용
 
 **로컬 실행:**
 ```bash
@@ -166,7 +166,7 @@ streamlit run src/dashboard/app.py
 
 이 프로젝트는 Streamlit Community Cloud에 배포되어 있습니다:
 
-1. **라이브 URL**: https://apply-demo-2.streamlit.app/
+1. **라이브 URL**: https://apply-demo-2-mhzlfh5uxhhkqchlhfozca.streamlit.app/
 2. **배포 방법**: Streamlit Cloud 대시보드에서 수동 배포
 3. **무료 호스팅**: Streamlit Community Cloud 무료 티어
 
